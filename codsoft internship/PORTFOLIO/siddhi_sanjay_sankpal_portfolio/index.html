@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    
+    <script src="qualification.js"></script>
+    <script src="project.js"></script>
+
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <header>
+        <nav>
+            <div class="left">PORTFOLIO</div>
+            <div class="right"></div>
+            <ul>
+    
+                <li><a href="/">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+
+                <li><a href="/#skills">SKILLS</a></li>
+                <li><a href="/#QUALIFICATION">QUALIFICATIONS</a></li>
+                <li><a href="/#PROJECTS">PROJECTS</a></li>
+                <li><a href="/#ACHIVEMENTS">ACHIVEMENTS</a></li>
+                <li><a href="/#contact">CONTACT</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+           
+            <div 
+           class="leftsection"> Hi 
+           <div>I'm Siddhi Sanjay Sankpal</div>
+           <span id="element"></span>
+           <br> <!-- Add a line break -->
+           <a href="SIDDHI SANJAY SANKPAL_CV.pdf" download>
+               <button>Download CV</button>
+           </a>
+           </div>
+           
+           <div class="rightsection">
+            <img src="homepage_image.png" alt="Description of the image" width="500" height="500">
+            
+           </div>
+
+           
+           
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['I am a Full Stack Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+
+
+
+<!-- ABOUT PAGE . -->
+
+      <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ABOUT.jpeg" alt="Description of the image" width="500" height="500">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>Hello! I'm Siddhi Sanjay Sankpal, a passionate and enthusiastic Full Stack Developer with a strong foundation in web development technologies.</p>
+                <p>I'm excited to embark on a journey in the world of programming and web development, and I'm eager to contribute to innovative projects and collaborate with forward-thinking teams.</p>
+               <p>My goal is to bridge the gap between the front-end and back-end, allowing for seamless and efficient web application development.</p>
+                <p>I love the challenge of building end-to-end solutions.</p>
+                </div>
+            </div>
+            </div>
+        
+
+        </div>
+        <script>
+            const buttons = document.querySelectorAll('.info-button');
+const infoSections = document.querySelectorAll('[id$="-info"]');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Hide all info sections
+        infoSections.forEach(section => {
+            section.classList.remove('show-info');
+        });
+
+        // Show the selected info section
+        const target = button.getAttribute('data-target');
+        document.getElementById(target + '-info').classList.add('show-info');
+    });
+});
+
+        </script>
+        </div>
+
+
+<!-- SKILL PAGE . -->
+
+
+        <div id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="skills-col-2">
+                        <img src="skills.webp" alt="Description of the image" width="500" height="500">
+                    </div>
+                    <div class="skills-col-1">
+                        <h1 class="Title ">MY SKILLS</h1>
+                        <p>Front-End Development: I specialize in creating dynamic and user-friendly web interfaces using HTML, CSS, and JavaScript. I have experience with modern front-end libraries and frameworks such as React.js.</p>
+                    <p>Back-End Development: I have a solid understanding of server-side programming using technologies like Node.js and Express.js. I'm also comfortable working with databases, including SQL and NoSQL databases.
+                    </p>
+                    <p>Middle-ware Development: I have comfortable working with java and DotNet</p>    
+                </div>
+                </div>
+                </div>
+    
+            </div>
+            </div>
+             <br>
+             <br>
+
+
+
+<!-- QUALIFICATION PAGE . -->
+
+            <div id="QUALIFICATION">
+                <div class="container">
+                    <div class="row">
+                        <div class="skills-col-2">
+                            <img src="education.webp" alt="Description of the image" width="500" height="500">
+                        </div>
+                        <div class="skills-col-1">
+                            <h1 class="Title">QUALIFICATIONS</h1>
+                            <!-- Buttons for each section -->
+                            <button id="schoolBtn">SCHOOL</button>
+                            <button id="diplomaBtn">DIPLOMA</button>
+                            <button id="degreeBtn">DEGREE</button>
+                            <button id="pgDiplomaBtn">PG-DIPLOMA</button>
+                            
+                            <!-- Containers for displaying information -->
+                            <div id="schoolInfo" class="info"></div>
+                            <div id="diplomaInfo" class="info"></div>
+                            <div id="degreeInfo" class="info"></div>
+                            <div id="pgDiplomaInfo" class="info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- PROJECTS PAGE . -->
+
+
+            <div id="PROJECTS">
+                <div class="container">
+                    <div class="row">
+                        <div class="PROJECT-col-2">
+                            <img src="prepare-for-business-project.jpg" alt="Description of the image" width="500" height="500">
+                        </div>
+                        <div class="PROJECT-col-1">
+                            <h1 class="Title">PROJECTS</h1>
+                            <!-- Buttons for each section -->
+                            <button id="FPGABtn">FPGA based braille keyboard for blind person</button>
+                            
+                            <button id="FLEETBtn">Fleet Management System </button>
+                            <button id="TOUCHLESSBtn">Touchless waste segregation from open space</button>
+                            
+                            <!-- Containers for displaying information -->
+                            <div id="FPGAInfo" class="info"></div>
+                            <div id="TOUCHLESSInfo" class="info"></div>
+                            <div id="FLEETInfo" class="info"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- ACHIVEMENTS PAGE . -->
+
+           <div id="ACHIVEMENTS">
+            <div class="container">
+                <div class="row">
+                    <div class="skills-col-2">
+                        <img src="achievements.jpg" alt="Description of the image" width="500" height="500">
+                    </div>
+                    <div class="skills-col-1">
+                        <h1 class="Title ">MY ACHIVEMENTS</h1>
+                        <p>  Member of NSS in Shah & Anchor Kutchhi Engineering College.</p>
+                        <br>
+                        <p>  Past Co Ordinator and department Head in cultural activities of
+                             Babasaheb Gawde institute of Technology to precede over 5 Groups &
+                             50+ volunteers 
+                    </p>
+                     
+                </div>
+                </div>
+                </div>
+
+<!-- CONTACT PAGE . -->
+
+                <div id="contact">
+                <div class="container">
+                    <form>
+                        <h1>Contact Details</h1>
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="text" id="mobile" placeholder="Mobile" required>
+                        <h4>Type Your Message Here...</h4>
+                        <textarea required></textarea>
+                        <input type="submit" value="Send" id="button">
+                    </form>
+                </div>
+                </div>
+            
+
+            
+
+            
+            
+       
+</body>
+</html>
